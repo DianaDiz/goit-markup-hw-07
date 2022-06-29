@@ -31,14 +31,12 @@ cursor: pointer;
 border: #F5F4FA;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-.button-list__btn:hover,
-.button-list__btn:focus {
+&:hover,
+&:focus {
 color: #FFFFFF;
 background-color: var(--color-accent);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
+}
 }
 
 .work-list {
@@ -57,11 +55,10 @@ margin-bottom: 30px;
 .work-list__project {
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.work-list__project:hover,
-.work-list__project:focus {
+&:hover,
+&:focus {
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 25%);
+}
 }
 
 .work-list__project:hover .work-list__text-work{
@@ -87,16 +84,12 @@ background: #2196F3E5;
 padding: 63px 24px;
 transform: translateY(100%);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
-
 
 .work-list__border-work {
 border: 1px solid #ECECEC;
 padding: 20px 24px;
 }
-
-
 
 .work-list__list-title {
 font-weight: 700;

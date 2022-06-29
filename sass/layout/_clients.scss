@@ -7,16 +7,10 @@ padding-top: 94px;
 fill: #AFB1B8;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients__border-logo:hover,
-.clients__border-logo:focus {
-border-color: var(--color-accent);
-}
-
-.clients__border-logo:hover .clients__logo-icon,
-.clients__border-logo:focus .clients__logo-icon {
+.clients__border-logo:hover &,
+.clients__border-logo:focus & {
 fill: var(--color-accent);
+}
 }
 
 .clients__logo {
@@ -38,12 +32,16 @@ justify-content: center;
 align-items: center;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
+border-color: var(--color-accent);
+}
 }
 
 .clients__list-logo {
 margin-right: 30px;
-}
-
-.clients__list-logo:last-child {
+&:last-child {
 margin-right: 0;
 }
+}
+

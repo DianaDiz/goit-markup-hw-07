@@ -53,10 +53,9 @@ justify-content: center;
 width: 44px;
 height: 44px;
 margin-right: 10px;
-}
-
-.soc-list__item:last-child {
+&:last-child {
 margin-right: 0;
+}
 }
 
 .soc-list__link {
@@ -68,20 +67,18 @@ align-items: center;
 justify-content: center;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus {
+background-color: var(--color-accent);
+}
 }
 
 .soc-list__icon {
 fill: #AFB1B8;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.soc-list__link:hover,
-.soc-list__link:focus {
-background-color: var(--color-accent);
-}
-
-.soc-list__link:hover .soc-list__icon,
-.soc-list__link:focus .soc-list__icon {
+.soc-list__link:hover &,
+.soc-list__link:focus & {
 fill: #FFFFFF;
+}
 }
